@@ -7,16 +7,78 @@
     scroll-behavior: smooth;
     font-family: "Open Sans", sans-serif;
     font-family: "Roboto", sans-serif;
-  }
-  
-  :root {
+}
+
+:root {
     --main-color: #303841;
     --main-color2: #BE3144;
     --body-color: #45567D;
     --footer-color: #303841;
     --font-color: #F0F0F0;
-    --p-font: 1rem;
-    --h2-font: 1.5em;
-    --h5-font: 1.3rem;
-  }
-  
+    --p-font: 1.5rem;
+    --h1-font: 3rem;
+    --h5-font: 2rem;
+}
+
+body {
+    font-size: var(--p-font);
+}
+
+/* header style start */
+nav {
+    background-color: var(--main-color2);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-items {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-items a {
+    color: var(--font-color);
+    display: block;
+    padding: 2rem;
+    font-size: var(--p-font);
+}
+
+.nav-items a:hover {
+    background-color: var(--body-color);
+}
+
+/* header style end */
+/* main section start */
+
+/* welcome section style start */
+#welcome-section {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F1F21;
+    flex-direction: column;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section h1 {
+    font-size: var(--h1-font);
+    color: var(--font-color);
+    display: block;
+}
+
+#welcome-section p {
+    display: block;
+    font-style: italic;
+    font-size: var(--h5-font);
+    color: var(--main-color2);
+    font-weight: 200;
+}
+
+/* welcome section style end */
+/* main section end */
