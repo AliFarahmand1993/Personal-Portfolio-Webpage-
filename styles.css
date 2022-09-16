@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  :root {
+    --main-color: #303841;
+    --main-color2: #BE3144;
+    --body-color: #45567D;
+    --footer-color: #303841;
+    --font-color: #F0F0F0;
+    --p-font: 1rem;
+    --h2-font: 1.5em;
+    --h5-font: 1.3rem;
+  }
+  
