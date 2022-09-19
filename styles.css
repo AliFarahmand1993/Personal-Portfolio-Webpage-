@@ -150,7 +150,7 @@ nav {
     display: inline-block;
     background-color: var(--main-color);
     padding: .5rem 1rem;
-
+    border-radius: .2rem;
 }
 
 .all-project:hover {
