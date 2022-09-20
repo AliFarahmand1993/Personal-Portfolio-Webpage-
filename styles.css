@@ -4,6 +4,7 @@
 	3. welcome section
     4. project section
     5.  footer section
+    6.  media querry
 */
 
 /*------------------------
@@ -101,12 +102,11 @@ nav {
 #projects {
     background-color: var(--body-color);
     width: 100%;
-    height: 90rem;
     text-align: center;
     padding: 5rem 2rem;
 }
 
-.projects-tlt {
+.project-tile {
     max-width: 42rem;
     margin: 0 auto 6rem auto;
     font-size: var(--h1-font);
@@ -150,7 +150,7 @@ nav {
     display: inline-block;
     background-color: var(--main-color);
     padding: .5rem 1rem;
-
+    border-radius: .2rem;
 }
 
 .all-project:hover {
@@ -167,7 +167,6 @@ nav {
 footer {
     background-color: var(--footer-color);
     width: 100%;
-    height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,7 +175,7 @@ footer {
 footer h2 {
     color: var(--font-color);
     font-size: 3.5rem;
-    margin-top: 1rem;
+    margin-top: 5rem;
 }
 footer p {
     display: block;
@@ -192,11 +191,16 @@ footer a {
 .footer-icon ul{
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
 }
 .footer-icon li{
- margin: 0 1rem 5rem 1rem;
+ margin: 0 1rem 3rem 1rem;
+ transition: transform 0.3s ease-out;
 }
+.footer-icon li:hover{
+    transform: translateY(1rem);
+   }
 .border-footer{
     width: 100%;
     border: .1rem solid var(--main-color2);
@@ -204,7 +208,68 @@ footer a {
 }
 .desc-footer p{
 display: inline-flex;
-justify-content: center;
+justify-content: space-evenly;
+padding: 2rem ;
 font-size: 1rem;
+}
 
+/*------------------------
+  6.  media querry
+------------------------*/
+@media ( max-width: 768px) {
+    nav{
+        align-items: center;
+        font-size: .5rem;
+        
+    }
+    .nav-items a {
+        padding:1rem;
+    }
+    #welcome-section {
+        width: 100%;
+        height: 20rem;
+    }
+    #welcome-section h1{
+        font-size:1.5rem ;
+    }
+    #welcome-section p {
+        font-size:1.rem ;
+    }
+    .project-item{
+        width: 100%;
+    }
+    .project-tile{
+        width: 100%;
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+    .project-image{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .project-title {
+        width: 100%;
+        padding: 1rem 0;
+        left: 0;
+    }
+    .project-title span{
+        display: none;
+    }
+    .all-project{
+        margin: 4rem 0 0 0;
+        padding: .5rem;
+    }
+#projects {
+    padding: 5rem 0;
+}
+footer h2 {
+font-size: 1rem;
+}
+footer p{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+.desc-footer p {
+padding: 2rem 0;
+}
 }
